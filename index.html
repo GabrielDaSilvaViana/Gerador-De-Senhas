@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador De Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Senha</h1>
+        <div class ="datahora">
+            <h2 id="data"></h2>
+            <h2 id="hora"></h2>
+        </div>
+
+        <button id="btnGerar">Gerar Senha</button>
+        <button id="btnGerarPreferencial" class="secondary">Gerar Preferencial</button>
+        <button id="btnReset" class="secondary reset">Zerar Filas</button>
+
+        <div class="SenhasBox">
+            <h2>Última Senha</h2>
+            <h1 id="Senha">---</h1>
+        </div>
+
+        <div class="SenhasBox">
+            <h2>Última Preferencial</h2>
+            <h1 id="SenhaPreferencial">---</h1>
+        </div>
+
+        <div class="guiche">
+            <label for="Escolha o Guiche"></label>
+            <select id="guiche">
+                <option value="1">Guiche 1</option>
+                <option value="2">Guiche 2</option>
+                <option value="3">Guiche 3</option>
+            </select>
+            <button id="btnChamar">Chamar</button>
+        </div>
+
+        <div class="recent">
+            <h2>Últimas Senhas Geradas</h2>
+            <ul id="recentList"></ul>
+        </div>
+
+        <div class="history">
+            <h2>Histórico de Chamadas</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
